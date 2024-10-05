@@ -12,10 +12,18 @@
 #include <iostream>
 using namespace std;
 
+enum PokemonChoice
+{
+    Charmander,
+    Bulbasaur,
+    Squirtle,
+    InvalidChoice
+};
+
 int main()
 {
     string player_name;
-    string chosen_pokemon;
+    PokemonChoice chosen_pokemon = InvalidChoice;
 
     // Ask the player for their name
     cout << "Trainer! What is your name? ";
@@ -43,35 +51,44 @@ int main()
     //Respond based on player choice
     switch (playerChoice)
     {
-        case 1:
-            chosen_pokemon = "Charmander";
-            cout << "You chose Charmander!  A fiery and brave companion." << endl;
-            cout << "Professor Oak: Charmander’s fire will light the path of your journey!" << endl;
+        case 1:     chosen_pokemon = Charmander;
             break;
-
-        case 2:
-            chosen_pokemon = "Bulbasaur";
-            cout << "You chose Bulbasaur! A calm and wise choice." << endl;
-            cout << "Professor Oak: Bulbasaur will grow strong, just like your bond with it." << endl;
+        case 2:     chosen_pokemon = Bulbasaur;
             break;
-
-        case 3:
-            chosen_pokemon = "Squirtle";
-            cout << "You chose Squirtle! A loyal and dependable friend" << endl;
-            cout << "Professor Oak: Squirtle's water will wash away any obstacles in your way!" << endl;
+        case 3:     chosen_pokemon = Squirtle;
             break;
-
-        default :
-            cout << "Professor Oak: Hmm, that doesn't seem right. Let me choose "
-                "for you..." << endl;
-            chosen_pokemon = "Pikachu"; // Default if no valid choice is made
-            cout << "Professor Oak: Just kidding! Let's go with Pikachu, the "
-                "surprise guest!" << endl;
-
+        default :   chosen_pokemon = InvalidChoice; // Default if no valid choice is made
             break;
     }
 
-    cout << "Professor Oak: " << chosen_pokemon << " and you, "
+    //Respond based on player choice
+    switch (chosen_pokemon)
+    {
+    case Charmander:
+        cout << "You chose Charmander!  A fiery and brave companion." << endl;
+        cout << "Professor Oak: Charmander’s fire will light the path of your journey!" << endl;
+        break;
+
+    case Bulbasaur:
+        cout << "You chose Bulbasaur! A calm and wise choice." << endl;
+        cout << "Professor Oak: Bulbasaur will grow strong, just like your bond with it." << endl;
+        break;
+
+    case Squirtle:
+        cout << "You chose Squirtle! A loyal and dependable friend" << endl;
+        cout << "Professor Oak: Squirtle's water will wash away any obstacles in your way!" << endl;
+        break;
+
+    default:
+        cout << "Professor Oak: Hmm, that doesn't seem right. Let me choose "
+            "for you..." << endl;
+        chosen_pokemon = Charmander; // Default if no valid choice is made
+        cout << "Professor Oak: Just kidding! Let's go with Charmander, A fiery and brave companion." << endl;
+
+        break;
+    }
+
+    cout << "Professor Oak: " << (chosen_pokemon == Charmander ? "Charmander" : chosen_pokemon == Bulbasaur ? "Bulbasaur" : "Squirtle") << " and you, "
         << player_name << ", are going to be the best of friends!" << endl;
     cout << "Professor Oak: Your journey begins now! Get ready to explore "
         "the vast world of Pokemon!" << endl;

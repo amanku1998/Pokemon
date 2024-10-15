@@ -10,6 +10,8 @@
 //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
 
 #include <iostream>
+#include "PokemonType.hpp"
+#include "PokemonChoice.hpp"
 #include <limits> // Include this header to use numeric_limits
 #include<string>
 using namespace std;
@@ -27,23 +29,6 @@ void clearconsole() {
 void waitForEnter() {
     cin.get();    // Wait for Enter key
 }
-
-enum class PokemonChoice
-{
-    CHARMANDER = 1,
-    BULBASAUR,
-    SQUIRTLE,
-    PIKACHU // Default choice
-};
-
-enum class PokemonType
-{
-    FIRE,
-    GRASS,
-    WATER,
-    ELECTRIC,
-    NORMAL      //Added default constructor
-};
 
 class Pokemon {
     public :
@@ -291,8 +276,7 @@ int main()
     gameLoop(player);
 
     return 0;
-
-#include "header.hpp"
+}
 
 
 

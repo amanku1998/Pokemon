@@ -1,34 +1,13 @@
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
-
 #include <iostream>
 #include "PokemonType.hpp"
 #include "PokemonChoice.hpp"
+#include "Utility.hpp"
 #include <limits> // Include this header to use numeric_limits
 #include<string>
 using namespace std;
-
-void clearconsole() {
-// Platform-specific clear console command
-#ifdef _WIN32
-    system("cls");
-#else
-    (void)system("clear");
-#endif
-}
-
-// Function to wait for user to press Enter
-void waitForEnter() {
-    cin.get();    // Wait for Enter key
-}
 
 class Pokemon {
     public :
@@ -113,7 +92,7 @@ class Player{
             break;
         }
         cout << "Player " << name << " chose " << chosenPokemon.name << "!\n";
-        waitForEnter(); // Wait for user to press Enter before proceeding
+        Utility::waitForEnter(); // Wait for user to press Enter before proceeding
     }
 };
 
@@ -131,11 +110,11 @@ class ProfessorOak {
     void greetPlayer(Player& player)
     {
         cout << name << ": Hello there! Welcome to the world of Pokémon!" << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": I am Professor Oak. People call me the Pokemon Professor" << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": But enough about me. Let's talk about you!" << endl;
-        waitForEnter();
+        Utility::waitForEnter();
     }
 
     void offerPokemonChoices(Player& player)
@@ -147,15 +126,15 @@ class ProfessorOak {
 
         // Respond back with a congratulatory message
         cout << name << ": Congratulations, " << player.name << "! You're officially in the Pokémon world now!" << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": Great start, Trainer! Your adventure begins here!" << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": Today is a momentous day you’ll be choosing your very first Pokémon." << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": Every great Trainer remembers this moment for the rest of their lives." << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": So, choose wisely, young one!" << endl;
-        waitForEnter();
+        Utility::waitForEnter();
 
         cout << name << ": Here are your options:" << endl;
         cout << "1. Charmander - The fire type. A real hothead!" << endl;
@@ -168,33 +147,36 @@ class ProfessorOak {
         cin >> playerChoice;
 
         player.choosePokemon(playerChoice);
-        waitForEnter();
+        Utility::waitForEnter();
     }
 
     void explainMainQuest(Player& player)
     {
+        // Clear the console
+        Utility::clearConsole();
+
         cout << name << ": Ah " << player.name << ", let me tell you about your grand adventure that's about to unfold!" << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": Becoming a Pokémon Master is no easy task. It demands courage, strategy, and sometimes a little bit of luck." << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": Your main mission is to collect all the Pokémon Badges and defeat the Pokémon League. Only then can you challenge the Elite Four   and aim for the    title of Champion. " << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << player.name << ": Wait, isn’t that just like every other Pokémon game?" << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": No breaking the fourth wall, " << player.name << " !This is serious business." << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": To achieve this, you must capture new Pokémon, battle wild creatures, challenge gym leaders, and keep your Pokémon healthy at the PokeCenter." << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": Remember, you can only carry a limited number of Pokémon. Choose wisely who you want on your team! "<< player.name << "Piece of cake, right?"<< endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": Ha! That’s what everyone thinks. But the path to becoming a Champion is filled with obstacles. Lose a battle, and it’s back to the start." << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": So, what do you say? Are you ready to embark on this epic journey to become the next Pokémon Champion? " << player.name << " Ready as I’ll ever be, Professor!" << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": That’s the spirit! Now, your journey begins. Remember, it’s not just about battling—it’s about forming bonds with your Pokémon. Go, Trainer, the world of Pokémon awaits you!" << endl;
-        waitForEnter();
+        Utility::waitForEnter();
         cout << name << ": Oh, and about the actual game loop… let’s just pretend I didn’t forget to set it up. Onwards!" << endl;
-        waitForEnter();
+        Utility::waitForEnter();
     }
 };
 
@@ -206,7 +188,7 @@ void gameLoop(Player& player)
     while (keepPlaying == true)
     {
         // Clear console before showing options
-        clearconsole();
+        Utility::clearConsole();
 
         // Display options to the player
         cout << "What would you like to do next, " << player.name << "?" << endl;
@@ -218,8 +200,7 @@ void gameLoop(Player& player)
         cout << "Enter your choice: ";
         cin >> choice;
 
-        // Clear the newline character left in the buffer after cin >> choice
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        Utility::clearInputBuffer(); // Clear the input buffer
 
         switch (choice)
         {
@@ -250,7 +231,7 @@ void gameLoop(Player& player)
             break;
         }
 
-        waitForEnter();
+        Utility::waitForEnter();
     }
 
     cout << "Goodbye, " << player.name << "! Thanks for playing!" << endl;

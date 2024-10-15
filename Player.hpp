@@ -1,6 +1,3 @@
-#include "PokemonType.hpp"
-#include "PokemonChoice.hpp"
-#include "Utility.hpp"
 #include<string>
 using namespace std;
 

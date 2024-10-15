@@ -13,14 +13,18 @@
 #include<string>
 using namespace std;
 
+void clearconsole() {
+    // Platform-specific clear console command
+#ifdef _WIN32
+    system("cls");
+#else
+    (void)system("clear");
+#endif
+}
 
 // Function to wait for user to press Enter
 void waitForEnter() {
     cin.get();    // Wait for Enter key
-}
-
-void clearConsole(){
-
 }
 
 enum class PokemonChoice
@@ -208,6 +212,64 @@ class ProfessorOak {
     }
 };
 
+void gameLoop(Player& player)
+{
+    int choice;
+    bool keepPlaying = true;
+
+    while (keepPlaying == true)
+    {
+        // Clear console before showing options
+        clearconsole();
+
+        // Display options to the player
+        cout << "What would you like to do next, " << player.name << "?" << endl;
+        cout << "1. Battle Wild Pokémon" << endl;
+        cout << "2. Visit PokeCenter" << endl;
+        cout << "3. Challenge Gyms" << endl;
+        cout << "4. Enter Pokémon League" << endl;
+        cout << "5. Quit" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        // Clear the newline character left in the buffer after cin >> choice
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+        switch (choice)
+        {
+        case 1:
+            cout << "You look around... but all the wild Pokemon are on vacation. Maybe try again later?" << endl;
+            break;
+        case 2:
+            cout << "You head to the PokeCenter, but Nurse Joy is on vacation! Come back later." << endl;
+            break;
+        case 3:
+            cout << "You challenged a Gym Leader, but they’re too busy drinking coffee right now. Maybe later!" << endl;
+            break;
+        case 4:
+            cout << "You tried to enter the Pokémon League, but the guard said your outfit isn’t fashionable enough." << endl;
+            break;
+        case 5:
+            cout << "You try to quit, but Professor Oak's voice echoes: "
+                "'There's no quitting in Pokémon training!'\n";
+            cout << "Are you sure you want to quit? (y/n): ";
+            char quitChoice;
+            cin >> quitChoice;
+            if (quitChoice == 'y' || quitChoice == 'Y') {
+                keepPlaying = false; // Exit the game loop
+            }
+            break;
+        default:
+            cout << "Oops! That's not a valid choice. Try again." << endl;
+            break;
+        }
+
+        waitForEnter();
+    }
+
+    cout << "Goodbye, " << player.name << "! Thanks for playing!" << endl;
+}
+
 int main()
 {
     //Using parameterized constructor
@@ -223,6 +285,9 @@ int main()
 
     // Explain the main quest
     professor.explainMainQuest(player);
+
+    // Start the main game loop
+    gameLoop(player);
 
     return 0;
 }

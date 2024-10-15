@@ -1,3 +1,167 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Pokemon.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   Main.cpp
-  Pokemon.vcxproj -> D:\C++_project\Pokemon\x64\Debug\Pockemon.exe
+D:\C++_project\Pokemon\Pokemon\PokemonType.hpp(2,12): error C2011: 'PokemonType': 'enum' type redefinition
+  (compiling source file 'Main.cpp')
+      D:\C++_project\Pokemon\Pokemon\PokemonType.hpp(2,12):
+      see declaration of 'PokemonType'
+  
+D:\C++_project\Pokemon\Pokemon\PokemonChoice.hpp(3,12): error C2011: 'PokemonChoice': 'enum' type redefinition
+  (compiling source file 'Main.cpp')
+      D:\C++_project\Pokemon\Pokemon\PokemonChoice.hpp(3,12):
+      see declaration of 'PokemonChoice'
+  
+D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7): error C2011: 'Utility': 'class' type redefinition
+  (compiling source file 'Main.cpp')
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(117,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(117,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(119,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(119,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(121,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(121,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(133,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(133,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(135,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(135,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(137,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(137,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(139,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(139,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(141,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(141,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(154,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(154,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(160,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(160,18): error C3861: 'clearConsole': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(163,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(163,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(165,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(165,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(167,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(167,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(169,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(169,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(171,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(171,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(173,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(173,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(175,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(175,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(177,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(177,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(179,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(179,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(181,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(181,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(183,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(183,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(195,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(195,18): error C3861: 'clearConsole': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(207,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(207,18): error C3861: 'clearInputBuffer': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(238,18): error C2027: use of undefined type 'Utility'
+      D:\C++_project\Pokemon\Pokemon\Utility.hpp(2,7):
+      see declaration of 'Utility'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(238,18): error C3861: 'waitForEnter': identifier not found
+D:\C++_project\Pokemon\Pokemon\Main.cpp(247,51): error C2027: use of undefined type 'PokemonType'
+      D:\C++_project\Pokemon\Pokemon\PokemonType.hpp(2,12):
+      see declaration of 'PokemonType'
+  
+D:\C++_project\Pokemon\Pokemon\Main.cpp(247,51): error C2065: 'FIRE': undeclared identifier
+  Player.cpp
+D:\C++_project\Pokemon\Pokemon\Player.hpp(10,13): error C3646: 'chosenPokemon': unknown override specifier
+  (compiling source file 'Player.cpp')
+  
+D:\C++_project\Pokemon\Pokemon\Player.hpp(10,5): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'Player.cpp')
+  
+D:\C++_project\Pokemon\Pokemon\Player.hpp(13,27): error C2061: syntax error: identifier 'Pokemon'
+  (compiling source file 'Player.cpp')
+  
+D:\C++_project\Pokemon\Pokemon\Player.cpp(7,5): error C2065: 'chosenPokemon': undeclared identifier
+D:\C++_project\Pokemon\Pokemon\Player.cpp(7,21): error C3861: 'Pokemon': identifier not found
+D:\C++_project\Pokemon\Pokemon\Player.cpp(10,31): error C2061: syntax error: identifier 'Pokemon'
+D:\C++_project\Pokemon\Pokemon\Player.cpp(12,5): error C2065: 'chosenPokemon': undeclared identifier
+D:\C++_project\Pokemon\Pokemon\Player.cpp(12,21): error C2065: 'p_chosenPokemon': undeclared identifier
+D:\C++_project\Pokemon\Pokemon\Player.cpp(21,42): error C2065: 'chosenPokemon': undeclared identifier
+D:\C++_project\Pokemon\Pokemon\Player.cpp(21,58): error C3861: 'Pokemon': identifier not found
+D:\C++_project\Pokemon\Pokemon\Player.cpp(25,42): error C2065: 'chosenPokemon': undeclared identifier
+D:\C++_project\Pokemon\Pokemon\Player.cpp(25,58): error C3861: 'Pokemon': identifier not found
+D:\C++_project\Pokemon\Pokemon\Player.cpp(29,42): error C2065: 'chosenPokemon': undeclared identifier
+D:\C++_project\Pokemon\Pokemon\Player.cpp(29,58): error C3861: 'Pokemon': identifier not found
+D:\C++_project\Pokemon\Pokemon\Player.cpp(35,9): error C2065: 'chosenPokemon': undeclared identifier
+D:\C++_project\Pokemon\Pokemon\Player.cpp(35,25): error C3861: 'Pokemon': identifier not found
+D:\C++_project\Pokemon\Pokemon\Player.cpp(38,47): error C2065: 'chosenPokemon': undeclared identifier
+  Generating Code...

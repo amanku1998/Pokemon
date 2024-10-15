@@ -1,13 +1,14 @@
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
-#include <iostream>
-#include "PokemonType.hpp"
 #include "PokemonChoice.hpp"
+#include "PokemonType.hpp"
 #include "Utility.hpp"
-#include "Player.hpp"
+#include <iostream>
 #include <limits> // Include this header to use numeric_limits
 #include<string>
+
+
 using namespace std;
 
 class Pokemon {
@@ -48,6 +49,8 @@ class Pokemon {
         //
     }
 };
+
+#include "Player.hpp"
 
 //class Player{
 //    public:

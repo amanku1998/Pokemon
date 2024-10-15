@@ -1,5 +1,6 @@
 #include<string>
 using namespace std;
+#include "pokemon.hpp"
 
 class Player {
 public:

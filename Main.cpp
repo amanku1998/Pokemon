@@ -7,98 +7,9 @@
 #include <iostream>
 #include <limits> // Include this header to use numeric_limits
 #include<string>
-
-
 using namespace std;
 
-class Pokemon {
-    public :
-    string name;
-    PokemonType type;
-    int health;
-
-    //Default constructor
-    Pokemon() {
-        //
-        name = "Unknown";
-        type = PokemonType::NORMAL;
-        health = 50;
-    }
-
-    //Parameterized constructor
-    Pokemon(string p_name, PokemonType p_type, int p_health) {
-        name = p_name;
-        type = p_type;
-        health = p_health;
-    }
-
-    //Copy constructor
-    Pokemon(const Pokemon &other) {
-        name = other.name;
-        type = other.type;
-        health = other.health;
-    }
-
-    void attack()
-    {
-        cout << name << "attacks with a powerful move!\n";
-    }
-
-    //Destructor
-    ~Pokemon() {
-        //
-    }
-};
-
 #include "Player.hpp"
-
-//class Player{
-//    public:
-//    string name;
-//    Pokemon chosenPokemon;
-//
-//    Player() {
-//        name = "Trainer";
-//        chosenPokemon = Pokemon(); // Using the default Pokemon constructor 
-//    }
-//
-//    Player(string p_name, Pokemon p_chosenPokemon) {
-//        name = p_name;
-//        chosenPokemon = p_chosenPokemon; // Using the default Pokemon constructor 
-//    }
-//
-//    //Copy constructor
-//    Player(const Player& other) {
-//        name = other.name;
-//        chosenPokemon = other.chosenPokemon;
-//    }
-//
-//    void choosePokemon(int choice)
-//    {
-//        //Respond based on player choice
-//        switch ((PokemonChoice)choice)
-//        {
-//        case PokemonChoice::CHARMANDER :     chosenPokemon = Pokemon("Charmander", PokemonType::FIRE , 100);
-//            cout << "You chose Charmander!  A fiery and brave companion." << endl;
-//            cout << "Professor Oak: Charmander’s fire will light the path of your journey!" << endl;
-//            break;
-//        case PokemonChoice::BULBASAUR  :     chosenPokemon = Pokemon("Bulbasaur", PokemonType::GRASS, 100);
-//            cout << "You chose Bulbasaur! A calm and wise choice." << endl;
-//            cout << "Professor Oak: Bulbasaur will grow strong, just like your bond with it." << endl;
-//            break;
-//        case PokemonChoice::SQUIRTLE   :     chosenPokemon = Pokemon("Squirtle", PokemonType::WATER, 100);
-//            cout << "You chose Squirtle! A loyal and dependable friend" << endl;
-//            cout << "Professor Oak: Squirtle's water will wash away any obstacles in your way!" << endl;
-//            break;
-//        default:   
-//            cout << "Professor Oak: Let's go with Pikachu." << endl;
-//            chosenPokemon = Pokemon("Pikachu", PokemonType::ELECTRIC, 100);
-//            break;
-//        }
-//        cout << "Player " << name << " chose " << chosenPokemon.name << "!\n";
-//        Utility::waitForEnter(); // Wait for user to press Enter before proceeding
-//    }
-//};
 
 class ProfessorOak {
     public :

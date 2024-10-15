@@ -10,11 +10,12 @@
 //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
 
 #include <iostream>
+#include <limits> // Include this header to use numeric_limits
 #include<string>
 using namespace std;
 
 void clearconsole() {
-    // Platform-specific clear console command
+// Platform-specific clear console command
 #ifdef _WIN32
     system("cls");
 #else
@@ -290,7 +291,8 @@ int main()
     gameLoop(player);
 
     return 0;
-}
+
+#include "header.hpp"
 
 
 

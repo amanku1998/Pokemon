@@ -2,7 +2,6 @@
 // Debug program: F5 or Debug > Start Debugging menu
 
 #include "Player.hpp"
-#include "Pokemon.hpp"
 #include "PokemonChoice.hpp"
 #include "PokemonType.hpp"
 #include "Utility.hpp"

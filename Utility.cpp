@@ -8,7 +8,7 @@ void Utility::clearConsole() {
 #ifdef _WIN32
     system("cls");
 #else
-    (void)system("clear");
+    system("clear");
 #endif
 }
 

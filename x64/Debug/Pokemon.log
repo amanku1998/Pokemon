@@ -1,39 +1,40 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Pokemon.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   Main.cpp
-D:\C++_project\Pokemon\Pokemon\PokemonType.hpp(2,12): error C2011: 'PokemonType': 'enum' type redefinition
+D:\C++_project\Pokemon\Pokemon\Player.hpp(10,13): error C2079: 'Player::chosenPokemon' uses undefined class 'Pokemon'
   (compiling source file 'Main.cpp')
-      D:\C++_project\Pokemon\Pokemon\PokemonType.hpp(2,12):
-      see declaration of 'PokemonType'
   
-D:\C++_project\Pokemon\Pokemon\Main.cpp(158,51): error C2027: use of undefined type 'PokemonType'
-      D:\C++_project\Pokemon\Pokemon\PokemonType.hpp(2,12):
-      see declaration of 'PokemonType'
-  
-D:\C++_project\Pokemon\Pokemon\Main.cpp(158,51): error C2065: 'FIRE': undeclared identifier
   Player.cpp
-D:\C++_project\Pokemon\Pokemon\PokemonType.hpp(2,12): error C2011: 'PokemonType': 'enum' type redefinition
+D:\C++_project\Pokemon\Pokemon\Player.hpp(10,13): error C2079: 'Player::chosenPokemon' uses undefined class 'Pokemon'
   (compiling source file 'Player.cpp')
-      D:\C++_project\Pokemon\Pokemon\PokemonType.hpp(2,12):
-      see declaration of 'PokemonType'
   
-D:\C++_project\Pokemon\Pokemon\Player.cpp(25,93): error C2027: use of undefined type 'PokemonType'
-      D:\C++_project\Pokemon\Pokemon\PokemonType.hpp(2,12):
-      see declaration of 'PokemonType'
+D:\C++_project\Pokemon\Pokemon\Player.cpp(11,28): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Player.hpp(5,7):
+      see declaration of 'Pokemon'
   
-D:\C++_project\Pokemon\Pokemon\Player.cpp(25,93): error C2065: 'FIRE': undeclared identifier
-D:\C++_project\Pokemon\Pokemon\Player.cpp(29,92): error C2027: use of undefined type 'PokemonType'
-      D:\C++_project\Pokemon\Pokemon\PokemonType.hpp(2,12):
-      see declaration of 'PokemonType'
+D:\C++_project\Pokemon\Pokemon\Player.cpp(14,9): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Player.hpp(5,7):
+      see declaration of 'Pokemon'
   
-D:\C++_project\Pokemon\Pokemon\Player.cpp(29,92): error C2065: 'GRASS': undeclared identifier
-D:\C++_project\Pokemon\Pokemon\Player.cpp(33,91): error C2027: use of undefined type 'PokemonType'
-      D:\C++_project\Pokemon\Pokemon\PokemonType.hpp(2,12):
-      see declaration of 'PokemonType'
+D:\C++_project\Pokemon\Pokemon\Player.cpp(16,21): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Player.hpp(5,7):
+      see declaration of 'Pokemon'
   
-D:\C++_project\Pokemon\Pokemon\Player.cpp(33,91): error C2065: 'WATER': undeclared identifier
-D:\C++_project\Pokemon\Pokemon\Player.cpp(39,57): error C2027: use of undefined type 'PokemonType'
-      D:\C++_project\Pokemon\Pokemon\PokemonType.hpp(2,12):
-      see declaration of 'PokemonType'
+D:\C++_project\Pokemon\Pokemon\Player.cpp(25,65): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Player.hpp(5,7):
+      see declaration of 'Pokemon'
   
-D:\C++_project\Pokemon\Pokemon\Player.cpp(39,57): error C2065: 'ELECTRIC': undeclared identifier
+D:\C++_project\Pokemon\Pokemon\Player.cpp(29,65): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Player.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\Player.cpp(33,65): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Player.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\Player.cpp(39,32): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Player.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+  Pokemon.cpp
+  Utility.cpp
   Generating Code...

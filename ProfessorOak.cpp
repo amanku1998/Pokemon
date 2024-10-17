@@ -1,7 +1,9 @@
+#include "ProfessorOak.hpp"
+#include "Player.hpp"
+#include "Utility.hpp"
 #include <iostream>
 using namespace std;
-#include "Utility.hpp"
-#include "ProfessorOak.hpp"
+
 
 //Parameterized constructor
 ProfessorOak::ProfessorOak(string p_name)

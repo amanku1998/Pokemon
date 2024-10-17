@@ -1,7 +1,10 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Pokemon.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Game.cpp
   Main.cpp
   Player.cpp
   Pokemon.cpp
   ProfessorOak.cpp
+  WildEncounterManager.cpp
+D:\C++_project\Pokemon\Pokemon\WildEncounterManager.cpp(8,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating Code...
   Pokemon.vcxproj -> D:\C++_project\Pokemon\x64\Debug\Pockemon.exe

@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
-#include "Player.hpp"
 
-//class Player;
+class Player;
 
 class ProfessorOak {
 public:

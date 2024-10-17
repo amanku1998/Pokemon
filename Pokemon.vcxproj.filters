@@ -50,5 +50,8 @@
     <ClInclude Include="ProfessorOak.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Grass.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

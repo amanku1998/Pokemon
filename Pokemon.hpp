@@ -6,7 +6,8 @@ class Pokemon {
 public:
     string name;
     PokemonType type;
-    int health;
+    int health;         // Represents the current HP
+    int maxHealth;      // Represents the maximum HP
 
     //Default constructor
     Pokemon();
@@ -20,5 +21,9 @@ public:
     //Destructor
     ~Pokemon();
 
-    void attack();
+    void attack(Pokemon& target);
+
+    void TakeDamage(int damage);      // Method to reduce HP
+
+    bool isFainted() const;       // Method to check if the Pokemon has fainted
 };

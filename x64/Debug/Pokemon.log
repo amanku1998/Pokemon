@@ -8,51 +8,88 @@ D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7): error C2011: 'Pokemon': 'class'
 D:\C++_project\Pokemon\Pokemon\Player.hpp(9,13): error C2079: 'Player::chosenPokemon' uses undefined class 'Pokemon'
   (compiling source file 'BattleManager.cpp')
   
-D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(6,26): error C2027: use of undefined type 'Pokemon'
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(7,33): error C2440: '=': cannot convert from 'int *' to 'Pokemon *'
+      D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(7,33):
+      Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+  
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(12,26): error C2027: use of undefined type 'Pokemon'
       D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
       see declaration of 'Pokemon'
   
-D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(7,5): error C2664: 'void BattleManager::battle(Pokemon &,Pokemon &)': cannot convert argument 1 from 'int' to 'Pokemon &'
-      D:\C++_project\Pokemon\Pokemon\BattleManager.hpp(9,7):
-      see declaration of 'BattleManager::battle'
-      D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(7,5):
-      while trying to match the argument list '(int, Pokemon)'
-  
-D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(11,26): error C2027: use of undefined type 'Pokemon'
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(40,24): error C2027: use of undefined type 'Pokemon'
       D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
       see declaration of 'Pokemon'
   
-D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(13,13): error C2027: use of undefined type 'Pokemon'
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(44,24): error C2027: use of undefined type 'Pokemon'
       D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
       see declaration of 'Pokemon'
   
-D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(13,43): error C2027: use of undefined type 'Pokemon'
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(60,20): error C2027: use of undefined type 'Pokemon'
       D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
       see declaration of 'Pokemon'
   
-D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(14,9): error C2027: use of undefined type 'Pokemon'
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(63,25): error C2027: use of undefined type 'Pokemon'
       D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
       see declaration of 'Pokemon'
   
-D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(16,14): error C2027: use of undefined type 'Pokemon'
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(82,20): error C2027: use of undefined type 'Pokemon'
       D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
       see declaration of 'Pokemon'
   
-D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(17,13): error C2027: use of undefined type 'Pokemon'
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(83,28): error C2027: use of undefined type 'Pokemon'
       D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
       see declaration of 'Pokemon'
   
-D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(21,9): error C2027: use of undefined type 'Pokemon'
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(86,56): error C2027: use of undefined type 'Pokemon'
       D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
       see declaration of 'Pokemon'
   
-D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(22,17): error C2027: use of undefined type 'Pokemon'
-      D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
+  Game.cpp
+D:\C++_project\Pokemon\Pokemon\pokemon.hpp(5,7): error C2011: 'Pokemon': 'class' type redefinition
+  (compiling source file 'Game.cpp')
+      D:\C++_project\Pokemon\Pokemon\pokemon.hpp(5,7):
       see declaration of 'Pokemon'
   
-D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(25,45): error C2027: use of undefined type 'Pokemon'
-      D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
+D:\C++_project\Pokemon\Pokemon\Player.hpp(6,7): error C2011: 'Player': 'class' type redefinition
+  (compiling source file 'Game.cpp')
+      D:\C++_project\Pokemon\Pokemon\Player.hpp(6,7):
+      see declaration of 'Player'
+  
+D:\C++_project\Pokemon\Pokemon\Game.cpp(13,28): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\pokemon.hpp(5,7):
       see declaration of 'Pokemon'
   
-  Main.cpp
+D:\C++_project\Pokemon\Pokemon\Game.cpp(14,28): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\Game.cpp(15,28): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\Game.cpp(29,57): error C2027: use of undefined type 'Player'
+      D:\C++_project\Pokemon\Pokemon\Player.hpp(6,7):
+      see declaration of 'Player'
+  
+D:\C++_project\Pokemon\Pokemon\Game.cpp(47,21): error C2079: 'wildPokemon' uses undefined class 'Pokemon'
+D:\C++_project\Pokemon\Pokemon\Game.cpp(47,52): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\Game.cpp(47,33): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\Game.cpp(53,13): error C2027: use of undefined type 'Player'
+      D:\C++_project\Pokemon\Pokemon\Player.hpp(6,7):
+      see declaration of 'Player'
+  
+D:\C++_project\Pokemon\Pokemon\Game.cpp(54,21): error C2027: use of undefined type 'Player'
+      D:\C++_project\Pokemon\Pokemon\Player.hpp(6,7):
+      see declaration of 'Player'
+  
+D:\C++_project\Pokemon\Pokemon\Game.cpp(89,28): error C2027: use of undefined type 'Player'
+      D:\C++_project\Pokemon\Pokemon\Player.hpp(6,7):
+      see declaration of 'Player'
+  
   Generating Code...

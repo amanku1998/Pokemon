@@ -7,8 +7,8 @@ using namespace std;
 Pokemon::Pokemon() : name("Unknown"), type(PokemonType::NORMAL), health(50) {}
 
 // Parameterized constructor
-Pokemon::Pokemon(string p_name, PokemonType p_type, int p_health)
-    : name(p_name), type(p_type), health(p_health) {}
+Pokemon::Pokemon(string p_name, PokemonType p_type, int p_maxHealth)
+    : name(p_name), type(p_type), maxHealth(p_maxHealth), health(p_maxHealth) {}
 
 // Copy constructor
 Pokemon::Pokemon(const Pokemon& other)
@@ -21,7 +21,7 @@ Pokemon::~Pokemon() {
 
 void Pokemon::attack(Pokemon& target)
 {
-    int damage = 10;// Fixed damage for simplicity
+    int damage = attackPower;// Fixed damage for simplicity
     cout << name << " attacks " << target.name << " for " << damage << " damage!\\n";
     target.TakeDamage(damage);   // Apply damage to the target Pokémon
 }
@@ -37,4 +37,8 @@ void Pokemon::TakeDamage(int damage)
 
 bool Pokemon::isFainted() const {
     return health <= 0;     // Return true if HP is 0 or less
+}
+
+void Pokemon::heal() {
+    health = maxHealth;
 }

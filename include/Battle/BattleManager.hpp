@@ -1,6 +1,6 @@
-#include "Pokemon.hpp"
-#include "Player.hpp"
 #include "BattleState.hpp"
+class Player;
+class Pokemon;
 
 class BattleManager {
 public :

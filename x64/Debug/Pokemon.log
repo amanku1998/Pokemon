@@ -1,3 +1,58 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Pokemon.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Game.cpp
-  Pokemon.vcxproj -> D:\C++_project\Pokemon\x64\Debug\Pockemon.exe
+  BattleManager.cpp
+D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7): error C2011: 'Pokemon': 'class' type redefinition
+  (compiling source file 'BattleManager.cpp')
+      D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\Player.hpp(9,13): error C2079: 'Player::chosenPokemon' uses undefined class 'Pokemon'
+  (compiling source file 'BattleManager.cpp')
+  
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(6,26): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(7,5): error C2664: 'void BattleManager::battle(Pokemon &,Pokemon &)': cannot convert argument 1 from 'int' to 'Pokemon &'
+      D:\C++_project\Pokemon\Pokemon\BattleManager.hpp(9,7):
+      see declaration of 'BattleManager::battle'
+      D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(7,5):
+      while trying to match the argument list '(int, Pokemon)'
+  
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(11,26): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(13,13): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(13,43): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(14,9): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(16,14): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(17,13): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(21,9): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(22,17): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\BattleManager.cpp(25,45): error C2027: use of undefined type 'Pokemon'
+      D:\C++_project\Pokemon\Pokemon\Pokemon.hpp(5,7):
+      see declaration of 'Pokemon'
+  
+  Main.cpp
+  Generating Code...

@@ -3,6 +3,7 @@
 #include "PokemonType.hpp"
 #include "Utility.hpp"
 #include "WildEncounterManager.hpp"
+#include "BattleManager.hpp"
 #include <iostream>
 using namespace std;
 
@@ -17,7 +18,7 @@ Game::Game() {
 
 void Game::gameLoop(Player& player) {
 
-    int choice;
+    BattleManager battleManager;
     bool keepPlaying = true;
 
     while (keepPlaying) {
@@ -32,6 +33,8 @@ void Game::gameLoop(Player& player) {
         cout << "4. Enter Pokémon League\n";
         cout << "5. Quit\n";
         cout << "Enter your choice: ";
+
+        int choice;
         cin >> choice;
 
         Utility::clearInputBuffer(); // Clear the input buffer
@@ -41,9 +44,8 @@ void Game::gameLoop(Player& player) {
         case 1: {
             // Create a scope within case 1
             WildEncounterManager encounterManager;
-            Pokemon encounteredPokemon =
-                encounterManager.getRandomPokemonFromGrass(forestGrass);
-            cout << "A wild " << encounteredPokemon.name << " appeared!\n";
+            Pokemon wildPokemon = encounterManager.getRandomPokemonFromGrass(forestGrass);
+            battleManager.startBattle(player, wildPokemon);
             break;
         }
         case 2: {

@@ -1,4 +1,4 @@
-#include "Grass.hpp"
+#include "../../include/Pokemon/Grass.hpp"
 
 class Player;
 
@@ -8,4 +8,5 @@ private :
 public:
 	Game();
 	void gameLoop(Player &player);
+	void visitPokeCenter(Player &player);
 };

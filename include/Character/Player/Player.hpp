@@ -1,5 +1,5 @@
 #include<string>
-#include "pokemon.hpp"
+#include "../../include/Pokemon/pokemon.hpp"
 
 using namespace std;
 

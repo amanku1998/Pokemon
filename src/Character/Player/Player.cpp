@@ -1,8 +1,8 @@
 
-#include "Player.hpp"
-#include "PokemonChoice.hpp"
-#include "PokemonType.hpp"
-#include "Utility.hpp"
+#include "../../include/Character/Player/Player.hpp"
+#include "../../include/Pokemon/PokemonChoice.hpp"
+#include "../../include/Pokemon/PokemonType.hpp"
+#include "../../include/Utility/Utility.hpp"
 #include <iostream>
 using namespace std;
 
@@ -22,21 +22,21 @@ void Player::choosePokemon(int choice)
     //Respond based on player choice
     switch ((PokemonChoice)choice)
     {
-    case PokemonChoice::CHARMANDER :     chosenPokemon = Pokemon("Charmander", PokemonType::FIRE , 100);
+    case PokemonChoice::CHARMANDER :     chosenPokemon = Pokemon("Charmander", PokemonType::FIRE , 100,10);
         cout << "You chose Charmander!  A fiery and brave companion." << endl;
         cout << "Professor Oak: Charmander’s fire will light the path of your journey!" << endl;
         break;
-    case PokemonChoice::BULBASAUR  :     chosenPokemon = Pokemon("Bulbasaur", PokemonType::GRASS, 100);
+    case PokemonChoice::BULBASAUR  :     chosenPokemon = Pokemon("Bulbasaur", PokemonType::GRASS, 100,8);
         cout << "You chose Bulbasaur! A calm and wise choice." << endl;
         cout << "Professor Oak: Bulbasaur will grow strong, just like your bond with it." << endl;
         break;
-    case PokemonChoice::SQUIRTLE   :     chosenPokemon = Pokemon("Squirtle", PokemonType::WATER, 100);
+    case PokemonChoice::SQUIRTLE   :     chosenPokemon = Pokemon("Squirtle", PokemonType::WATER, 100,9);
         cout << "You chose Squirtle! A loyal and dependable friend" << endl;
         cout << "Professor Oak: Squirtle's water will wash away any obstacles in your way!" << endl;
         break;
     default:   
         cout << "Professor Oak: Let's go with Pikachu." << endl;
-        chosenPokemon = Pokemon("Pikachu", PokemonType::ELECTRIC, 100);
+        chosenPokemon = Pokemon("Pikachu", PokemonType::ELECTRIC, 100,12);
         break;
     }
     cout << "Player " << name << " chose " << chosenPokemon.name << "!\n";

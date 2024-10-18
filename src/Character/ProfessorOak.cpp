@@ -1,6 +1,6 @@
-#include "ProfessorOak.hpp"
-#include "Player.hpp"
-#include "Utility.hpp"
+#include "../../include/Character/ProfessorOak.hpp"
+#include "../../include/Character/Player/Player.hpp"
+#include "../../include/Utility/Utility.hpp"
 #include <iostream>
 using namespace std;
 
@@ -12,7 +12,7 @@ ProfessorOak::ProfessorOak(string p_name)
 }
 
 //
-void ProfessorOak::greetPlayer(Player& player)
+void ProfessorOak::greetPlayer(Player &player)
 {
     cout << name << ": Hello there! Welcome to the world of Pokémon!" << endl;
     Utility::waitForEnter();
@@ -48,14 +48,14 @@ void ProfessorOak::offerPokemonChoices(Player& player)
 
     int playerChoice;
     //Capture the player's choice
-    cout << name << ": Which Pokémon would you like to choose? Enter 1, 2, or 3: " << endl;
+    cout << name << ": Which Pokémon would you like to choose? Enter the number of your choice: " << endl;
     cin >> playerChoice;
 
     player.choosePokemon(playerChoice);
     Utility::waitForEnter();
 }
 
-void ProfessorOak::explainMainQuest(Player& player)
+void ProfessorOak::explainMainQuest(Player &player)
 {
     // Clear the console
     Utility::clearConsole();

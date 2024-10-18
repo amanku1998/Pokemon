@@ -9,7 +9,6 @@ public:
 
     //Parameterized constructor
     ProfessorOak(string p_name);
-
     //
     void greetPlayer(Player& player);
 

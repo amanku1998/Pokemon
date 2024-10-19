@@ -1,7 +1,8 @@
-D:\C++_project\Pokemon\Pokemon\Game.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\Game.obj
+D:\C++_project\Pokemon\Pokemon\src\Battle\BattleManager.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\BattleManager.obj
+D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\Game.obj
 D:\C++_project\Pokemon\Pokemon\Main.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\Main.obj
-D:\C++_project\Pokemon\Pokemon\Player.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\Player.obj
-D:\C++_project\Pokemon\Pokemon\Pokemon.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\Pokemon.obj
-D:\C++_project\Pokemon\Pokemon\ProfessorOak.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\ProfessorOak.obj
-D:\C++_project\Pokemon\Pokemon\Utility.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\Utility.obj
-D:\C++_project\Pokemon\Pokemon\WildEncounterManager.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\WildEncounterManager.obj
+D:\C++_project\Pokemon\Pokemon\src\Character\Player\Player.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\Player.obj
+D:\C++_project\Pokemon\Pokemon\src\Pokemon\Pokemon.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\Pokemon.obj
+D:\C++_project\Pokemon\Pokemon\src\Character\ProfessorOak.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\ProfessorOak.obj
+D:\C++_project\Pokemon\Pokemon\src\Utility\Utility.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\Utility.obj
+D:\C++_project\Pokemon\Pokemon\src\Battle\WildEncounterManager.cpp;D:\C++_project\Pokemon\Pokemon\x64\Debug\WildEncounterManager.obj

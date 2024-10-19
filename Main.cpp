@@ -12,6 +12,11 @@
 #include<string>
 using namespace std;
 
+using namespace N_Utility;
+using namespace N_Player;
+using namespace N_ProfessorOak;
+using namespace N_Game;
+
 //void gameLoop(Player& player)
 //{
 //    int choice;
@@ -73,7 +78,7 @@ int main()
 {
     // Creating Objects
     ProfessorOak professor("Professor Oak");
-    Player player;
+    N_Player::Player player;
 
     // Greet the player and offer Pokemon choices 
     professor.greetPlayer(player);

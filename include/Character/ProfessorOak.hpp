@@ -1,18 +1,23 @@
+#include "../../include/Character/Player/Player.hpp" // Correct path to Player.hpp
+using namespace N_Player;
 #include <iostream>
 using namespace std;
 
 class Player;
 
-class ProfessorOak {
-public:
-    string name;
+namespace N_ProfessorOak {
 
-    //Parameterized constructor
-    ProfessorOak(string p_name);
-    //
-    void greetPlayer(Player& player);
+    class ProfessorOak {
+    public:
+        string name;
 
-    void offerPokemonChoices(Player& player);
+        //Parameterized constructor
+        ProfessorOak(string p_name);
+        //
+        void greetPlayer(N_Player::Player& player);
 
-    void explainMainQuest(Player& player);
-};
+        void offerPokemonChoices(N_Player::Player& player);
+
+        void explainMainQuest(N_Player::Player& player);
+    };
+}

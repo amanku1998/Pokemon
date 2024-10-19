@@ -1,16 +1,21 @@
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
-#include "Game.hpp"
-#include "Player.hpp"
-#include "ProfessorOak.hpp"
-#include "PokemonChoice.hpp"
-#include "PokemonType.hpp"
-#include "Utility.hpp"
+#include "../../include/Main/Game.hpp"
+#include "../../include/Character/Player/Player.hpp"
+#include "../../include/Character/ProfessorOak.hpp"
+#include "../../include/Pokemon/PokemonChoice.hpp"
+#include "../../include/Pokemon/PokemonType.hpp"
+#include "../../include/Utility/Utility.hpp"
 #include <iostream>
 #include <limits> // Include this header to use numeric_limits
 #include<string>
 using namespace std;
+
+using namespace N_Utility;
+using namespace N_Player;
+using namespace N_ProfessorOak;
+using namespace N_Game;
 
 //void gameLoop(Player& player)
 //{
@@ -71,12 +76,9 @@ using namespace std;
 
 int main()
 {
-    //Using parameterized constructor
-    Pokemon charmander("Charmander", PokemonType::FIRE, 100);
-
     // Creating Objects
     ProfessorOak professor("Professor Oak");
-    Player player("Ash", charmander);
+    N_Player::Player player;
 
     // Greet the player and offer Pokemon choices 
     professor.greetPlayer(player);

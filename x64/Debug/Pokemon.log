@@ -1,6 +1,240 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Pokemon.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Main.cpp
   BattleManager.cpp
   Game.cpp
+D:\C++_project\Pokemon\Pokemon\src\Battle\BattleManager.cpp(19,41): error C2248: 'N_Pokemon::Pokemon::name': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(10,16):
+      see declaration of 'N_Pokemon::Pokemon::name'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Battle\BattleManager.cpp(47,43): error C2248: 'N_Pokemon::Pokemon::attack': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(25,14):
+      see declaration of 'N_Pokemon::Pokemon::attack'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Battle\BattleManager.cpp(51,41): error C2248: 'N_Pokemon::Pokemon::attack': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(25,14):
+      see declaration of 'N_Pokemon::Pokemon::attack'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Battle\BattleManager.cpp(67,39): error C2248: 'N_Pokemon::Pokemon::isFainted': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(23,14):
+      see declaration of 'N_Pokemon::Pokemon::isFainted'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Battle\BattleManager.cpp(70,42): error C2248: 'N_Pokemon::Pokemon::isFainted': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(23,14):
+      see declaration of 'N_Pokemon::Pokemon::isFainted'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Battle\BattleManager.cpp(89,39): error C2248: 'N_Pokemon::Pokemon::isFainted': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(23,14):
+      see declaration of 'N_Pokemon::Pokemon::isFainted'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Battle\BattleManager.cpp(90,46): error C2248: 'N_Pokemon::Pokemon::name': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(10,16):
+      see declaration of 'N_Pokemon::Pokemon::name'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Battle\BattleManager.cpp(93,72): error C2248: 'N_Pokemon::Pokemon::name': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(10,16):
+      see declaration of 'N_Pokemon::Pokemon::name'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(19,43): error C2248: 'N_Pokemon::Pokemon::Pokemon': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(19,9):
+      see declaration of 'N_Pokemon::Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(20,43): error C2248: 'N_Pokemon::Pokemon::Pokemon': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(19,9):
+      see declaration of 'N_Pokemon::Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(21,43): error C2248: 'N_Pokemon::Pokemon::Pokemon': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(19,9):
+      see declaration of 'N_Pokemon::Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(18,9): error C2679: binary '=': no operator found which takes a right-hand operand of type 'initializer list' (or there is no acceptable conversion)
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\Grass.hpp(13,1):
+      could be 'Grass &Grass::operator =(Grass &&)'
+          D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(18,9):
+          'Grass &Grass::operator =(Grass &&)': cannot convert argument 2 from 'initializer list' to 'Grass &&'
+              D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(18,23):
+              Reason: cannot convert from 'initializer list' to 'Grass'
+              D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(18,23):
+              Invalid aggregate initialization
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\Grass.hpp(13,1):
+      or       'Grass &Grass::operator =(const Grass &)'
+          D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(18,9):
+          'Grass &Grass::operator =(const Grass &)': cannot convert argument 2 from 'initializer list' to 'const Grass &'
+              D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(18,23):
+              Reason: cannot convert from 'initializer list' to 'const Grass'
+              D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(18,23):
+              Invalid aggregate initialization
+      D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(18,9):
+      while trying to match the argument list '(Grass, initializer list)'
+  
+D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(28,33): error C2280: 'N_Battle::BattleManager::BattleManager(void)': attempting to reference a deleted function
+      D:\C++_project\Pokemon\Pokemon\include\Battle\BattleManager.hpp(23,2):
+      compiler has generated 'N_Battle::BattleManager::BattleManager' here
+      D:\C++_project\Pokemon\Pokemon\include\Battle\BattleManager.hpp(23,2):
+      'N_Battle::BattleManager::BattleManager(void)': function was implicitly deleted because a data member invokes a deleted or inaccessible function 'N_Battle::BattleState::BattleState(void)'
+      D:\C++_project\Pokemon\Pokemon\include\Battle\BattleState.hpp(11,2):
+      'N_Battle::BattleState::BattleState(void)': function was implicitly deleted because a base class invokes a deleted or inaccessible function 'N_Pokemon::Pokemon::Pokemon(void)'
+  
+D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(30,28): error C2248: 'N_Pokemon::Pokemon::Pokemon': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(17,9):
+      see declaration of 'N_Pokemon::Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(98,33): error C2248: 'N_Pokemon::Pokemon::health': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(12,13):
+      see declaration of 'N_Pokemon::Pokemon::health'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(98,64): error C2248: 'N_Pokemon::Pokemon::maxHealth': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(13,13):
+      see declaration of 'N_Pokemon::Pokemon::maxHealth'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(105,34): error C2248: 'N_Pokemon::Pokemon::heal': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(24,14):
+      see declaration of 'N_Pokemon::Pokemon::heal'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Main\Game.cpp(106,41): error C2248: 'N_Pokemon::Pokemon::name': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(10,16):
+      see declaration of 'N_Pokemon::Pokemon::name'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+  Main.cpp
+  Player.cpp
+D:\C++_project\Pokemon\Pokemon\src\Character\Player\Player.cpp(12,22): error C2248: 'N_Pokemon::Pokemon::Pokemon': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(17,9):
+      see declaration of 'N_Pokemon::Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Character\Player\Player.cpp(14,32): error C2248: 'N_Pokemon::Pokemon::Pokemon': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(17,9):
+      see declaration of 'N_Pokemon::Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Character\Player\Player.cpp(17,60): error C2248: 'N_Pokemon::Pokemon::Pokemon': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(17,9):
+      see declaration of 'N_Pokemon::Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Character\Player\Player.cpp(28,68): error C2248: 'N_Pokemon::Pokemon::Pokemon': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(19,9):
+      see declaration of 'N_Pokemon::Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Character\Player\Player.cpp(32,67): error C2248: 'N_Pokemon::Pokemon::Pokemon': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(19,9):
+      see declaration of 'N_Pokemon::Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Character\Player\Player.cpp(36,66): error C2248: 'N_Pokemon::Pokemon::Pokemon': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(19,9):
+      see declaration of 'N_Pokemon::Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Character\Player\Player.cpp(42,36): error C2248: 'N_Pokemon::Pokemon::Pokemon': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(19,9):
+      see declaration of 'N_Pokemon::Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Character\Player\Player.cpp(45,64): error C2248: 'N_Pokemon::Pokemon::name': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(10,16):
+      see declaration of 'N_Pokemon::Pokemon::name'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+  Pokemon.cpp
+  ProfessorOak.cpp
+  Caterpie.cpp
+D:\C++_project\Pokemon\Pokemon\src\Pokemon\Pokemons\Caterpie.cpp(14,59): error C2248: 'N_Pokemon::Pokemon::name': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(10,16):
+      see declaration of 'N_Pokemon::Pokemon::name'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Pokemon\Pokemons\Caterpie.cpp(15,20): error C2248: 'N_Pokemon::Pokemon::TakeDamage': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(26,14):
+      see declaration of 'N_Pokemon::Pokemon::TakeDamage'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+  Pidgey.cpp
+D:\C++_project\Pokemon\Pokemon\src\Pokemon\Pokemons\Pidgey.cpp(12,62): error C2248: 'N_Pokemon::Pokemon::name': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(10,16):
+      see declaration of 'N_Pokemon::Pokemon::name'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Pokemon\Pokemons\Pidgey.cpp(13,20): error C2248: 'N_Pokemon::Pokemon::TakeDamage': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(26,14):
+      see declaration of 'N_Pokemon::Pokemon::TakeDamage'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+  Pikachu.cpp
+D:\C++_project\Pokemon\Pokemon\src\Pokemon\Pokemons\Pikachu.cpp(13,55): error C2248: 'N_Pokemon::Pokemon::name': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(10,16):
+      see declaration of 'N_Pokemon::Pokemon::name'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Pokemon\Pokemons\Pikachu.cpp(14,11): error C2248: 'N_Pokemon::Pokemon::TakeDamage': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(26,14):
+      see declaration of 'N_Pokemon::Pokemon::TakeDamage'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+  Zubat.cpp
+D:\C++_project\Pokemon\Pokemon\src\Pokemon\Pokemons\Zubat.cpp(13,61): error C2248: 'N_Pokemon::Pokemon::name': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(10,16):
+      see declaration of 'N_Pokemon::Pokemon::name'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Pokemon\Pokemons\Zubat.cpp(14,20): error C2248: 'N_Pokemon::Pokemon::TakeDamage': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(26,14):
+      see declaration of 'N_Pokemon::Pokemon::TakeDamage'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+  WildEncounterManager.cpp
+D:\C++_project\Pokemon\Pokemon\src\Battle\WildEncounterManager.cpp(11,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\C++_project\Pokemon\Pokemon\src\Battle\WildEncounterManager.cpp(16,3): error C2248: 'N_Pokemon::Pokemon::Pokemon': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\Pokemon.hpp(21,9):
+      see declaration of 'N_Pokemon::Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\Pokemon.hpp(8,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
   Generating Code...
-  Pokemon.vcxproj -> D:\C++_project\Pokemon\x64\Debug\Pockemon.exe

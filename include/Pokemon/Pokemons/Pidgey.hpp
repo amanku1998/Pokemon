@@ -8,6 +8,8 @@ namespace N_Pokemon {
 		class Pidgey : public Pokemon {
 		public:
 			Pidgey();
+
+		private:
 			void wingAttack(Pokemon& target);
 		};
 	}

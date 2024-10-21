@@ -134,6 +134,10 @@
     <ClCompile Include="src\Character\Player\Player.cpp" />
     <ClCompile Include="src\Pokemon\Pokemon.cpp" />
     <ClCompile Include="src\Character\ProfessorOak.cpp" />
+    <ClCompile Include="src\Pokemon\Pokemons\Caterpie.cpp" />
+    <ClCompile Include="src\Pokemon\Pokemons\Pidgey.cpp" />
+    <ClCompile Include="src\Pokemon\Pokemons\Pikachu.cpp" />
+    <ClCompile Include="src\Pokemon\Pokemons\Zubat.cpp" />
     <ClCompile Include="src\Utility\Utility.cpp" />
     <ClCompile Include="src\Battle\WildEncounterManager.cpp" />
   </ItemGroup>
@@ -145,6 +149,10 @@
     <ClInclude Include="include\Character\Player\Player.hpp" />
     <ClInclude Include="include\Pokemon\Pokemon.hpp" />
     <ClInclude Include="include\Pokemon\PokemonChoice.hpp" />
+    <ClInclude Include="include\Pokemon\Pokemons\Caterpie.hpp" />
+    <ClInclude Include="include\Pokemon\Pokemons\Pidgey.hpp" />
+    <ClInclude Include="include\Pokemon\Pokemons\Pikachu.hpp" />
+    <ClInclude Include="include\Pokemon\Pokemons\Zubat.hpp" />
     <ClInclude Include="include\Pokemon\PokemonType.hpp" />
     <ClInclude Include="include\Character\ProfessorOak.hpp" />
     <ClInclude Include="include\Utility\Utility.hpp" />

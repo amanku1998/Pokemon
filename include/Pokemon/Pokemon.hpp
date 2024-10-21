@@ -1,14 +1,12 @@
 #pragma once
-
 #include<string>
-using namespace std;
 
 enum class PokemonType;
 
 namespace N_Pokemon {
-
+    using namespace std;
     class Pokemon {
-    public:
+    protected:
         string name;
         PokemonType type;
         int health;         // Represents the current HP

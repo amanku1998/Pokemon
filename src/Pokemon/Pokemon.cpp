@@ -51,10 +51,10 @@ namespace N_Pokemon {
         health = maxHealth;
     }
 
-    void Pokemon::attack(Pokemon* target)
-    {
-        cout << name << " attacks " << target->name << " for " << attackPower << " damage!\\n";
-        target->TakeDamage(attackPower);   // Apply damage to the target Pokémon
-    }
+    //void Pokemon::attack(Pokemon* target)
+    //{
+    //    cout << name << " attacks " << target->name << " for " << attackPower << " damage!\\n";
+    //    target->TakeDamage(attackPower);   // Apply damage to the target Pokémon
+    //}
 
 }

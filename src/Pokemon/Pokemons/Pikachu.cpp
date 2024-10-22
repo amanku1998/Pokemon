@@ -9,6 +9,10 @@ namespace N_Pokemon {
 
 		Pikachu::Pikachu():Pokemon("Pikachu", PokemonType::ELECTRIC, 100, 20) {};
 
+		void Pikachu::attack(Pokemon* target) {
+			thunderShock(target);
+		}
+
 		void Pikachu::thunderShock(Pokemon* target) {
 			cout << name << " uses Thunder Shock on " << target->name << "!\n";
 			target->TakeDamage(20);

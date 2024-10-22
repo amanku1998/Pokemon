@@ -22,7 +22,7 @@ namespace N_Pokemon {
 
         bool isFainted() const;       // Method to check if the Pokemon has fainted
         void heal();
-        void attack(Pokemon* target);
+        virtual void attack(Pokemon* target)=0;
         void TakeDamage(int damage);      // Method to reduce HP
     };
 

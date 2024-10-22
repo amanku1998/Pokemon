@@ -12,7 +12,7 @@ namespace N_Pokemon {
             Caterpie();
 
         //private:
-            void bugBite(Pokemon &target);
+            void bugBite(Pokemon* target);
         };
     }
 }

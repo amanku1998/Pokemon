@@ -13,7 +13,7 @@ namespace N_Battle {
     class WildEncounterManager {
     public:
         WildEncounterManager();
-        N_Pokemon::Pokemon getRandomPokemonFromGrass(const Grass &grass);
+        N_Pokemon::Pokemon* getRandomPokemonFromGrass(const Grass &grass);
     };
 
 }

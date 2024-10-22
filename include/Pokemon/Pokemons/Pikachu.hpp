@@ -9,7 +9,7 @@ namespace N_Pokemon {
 			Pikachu();
 
 		//private:
-			void thunderShock(Pokemon &target);
+			void thunderShock(Pokemon* target);
 		};
 	}
 }

@@ -12,7 +12,7 @@ namespace N_Pokemon {
             Balbasaur();
 
         //private:
-            void vineWhip(Pokemon& target);
+            void vineWhip(Pokemon* target);
 
         };
 

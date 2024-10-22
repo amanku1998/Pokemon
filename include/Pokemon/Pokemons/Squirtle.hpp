@@ -10,7 +10,7 @@ namespace N_Pokemon {
             Squirtle();
 
         //private:
-            void waterSplash(Pokemon& target);
+            void waterSplash(Pokemon* target);
 
         };
 

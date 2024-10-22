@@ -10,7 +10,7 @@ namespace N_Pokemon {
             Charmander();
 
         //private:
-            void flameThrower(Pokemon &target);
+            void flameThrower(Pokemon* target);
         };
 
     }

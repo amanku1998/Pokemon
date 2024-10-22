@@ -9,7 +9,7 @@ namespace N_Pokemon {
 			Pidgey();
 
 		//private:
-			void wingAttack(Pokemon &target);
+			void wingAttack(Pokemon* target);
 		};
 	}
 }

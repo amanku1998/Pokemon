@@ -13,6 +13,5 @@ namespace N_Pokemon {
             cout << name << " uses Supersonic on " << target.name << "!\n";
             target.TakeDamage(20);
         }
-
     }
 }

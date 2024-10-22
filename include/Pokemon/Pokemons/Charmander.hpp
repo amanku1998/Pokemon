@@ -1,16 +1,16 @@
 #pragma once
 #include "../../include/Pokemon/pokemon.hpp"
-#include <iostream>
 
 namespace N_Pokemon {
     namespace N_Pokemons {
 
-        class Zubat : public Pokemon {
+        class Charmander : public Pokemon {
+
         public:
-            Zubat();
+            Charmander();
 
         //private:
-            void supersonic(Pokemon &target);
+            void flameThrower(Pokemon &target);
         };
 
     }

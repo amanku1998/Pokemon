@@ -1,13 +1,13 @@
 #pragma once
-#include<string>
-
-enum class PokemonType;
+#include <string>
 
 namespace N_Pokemon {
-    using namespace std;
+
+    enum class PokemonType;
+
     class Pokemon {
-    protected:
-        string name;
+    public:
+        std::string name;
         PokemonType type;
         int health;         // Represents the current HP
         int maxHealth;      // Represents the maximum HP
@@ -16,7 +16,7 @@ namespace N_Pokemon {
         //Default constructor
         Pokemon();
         //Parameterized constructor
-        Pokemon(string p_name, PokemonType p_type, int p_health, int p_attackPower);
+        Pokemon(std::string p_name, PokemonType p_type, int p_health, int p_attackPower);
         //Copy constructor
         Pokemon(const Pokemon& other);
 

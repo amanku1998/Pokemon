@@ -5,12 +5,13 @@
 namespace N_Pokemon {
     namespace N_Pokemons {
 
-        class Zubat : public Pokemon {
+        class Squirtle : public Pokemon {
         public:
-            Zubat();
+            Squirtle();
 
         //private:
-            void supersonic(Pokemon &target);
+            void waterSplash(Pokemon& target);
+
         };
 
     }

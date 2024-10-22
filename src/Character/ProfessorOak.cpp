@@ -2,19 +2,20 @@
 #include "../../include/Character/Player/Player.hpp"
 #include "../../include/Utility/Utility.hpp"
 #include <iostream>
-using namespace std;
-using namespace N_Utility;
-using namespace N_Player;
 
-namespace N_ProfessorOak {
+namespace N_Character
+{
+    using namespace std;
+    using namespace N_Utility;
+    using namespace N_Player;
+
     //Parameterized constructor
-    ProfessorOak::ProfessorOak(string p_name)
-    {
+    ProfessorOak::ProfessorOak(string p_name){
         name = p_name;
     }
 
     //
-    void ProfessorOak::greetPlayer(N_Player::Player& player)
+    void ProfessorOak::greetPlayer(Player& player)
     {
         cout << name << ": Hello there! Welcome to the world of Pokémon!" << endl;
         Utility::waitForEnter();
@@ -24,7 +25,7 @@ namespace N_ProfessorOak {
         Utility::waitForEnter();
     }
 
-    void ProfessorOak::offerPokemonChoices(N_Player::Player& player)
+    void ProfessorOak::offerPokemonChoices(Player& player)
     {
         // Ask the player for their name
         cout << name << ": Trainer! What is your name? ";
@@ -57,7 +58,7 @@ namespace N_ProfessorOak {
         Utility::waitForEnter();
     }
 
-    void ProfessorOak::explainMainQuest(N_Player::Player& player)
+    void ProfessorOak::explainMainQuest(Player& player)
     {
         // Clear the console
         Utility::clearConsole();
@@ -85,5 +86,4 @@ namespace N_ProfessorOak {
         cout << name << ": Oh, and about the actual game loop… let’s just pretend I didn’t forget to set it up. Onwards!" << endl;
         Utility::waitForEnter();
     }
-
 }

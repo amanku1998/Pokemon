@@ -1,5 +1,5 @@
 #pragma once
-#include "../../include/Pokemon/Pokemons/Caterpie.hpp"
+//#include "../../include/Pokemon/Pokemons/Caterpie.hpp"
 #include "../../include/Pokemon/pokemon.hpp"
 #include <iostream>
 
@@ -7,13 +7,11 @@ namespace N_Pokemon {
 
     namespace N_Pokemons {
 
-        using namespace std;
-
         class Caterpie : public Pokemon {
         public:
             Caterpie();
 
-        private:
+        //private:
             void bugBite(Pokemon &target);
         };
     }

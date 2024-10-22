@@ -1,5 +1,4 @@
 #pragma once
-#include "../../include/Pokemon/Pokemons/Pikachu.hpp"
 #include "../../include/Pokemon/pokemon.hpp"
 
 namespace N_Pokemon {
@@ -9,7 +8,7 @@ namespace N_Pokemon {
 		public :
 			Pikachu();
 
-		private:
+		//private:
 			void thunderShock(Pokemon &target);
 		};
 	}

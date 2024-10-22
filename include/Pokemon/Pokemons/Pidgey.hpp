@@ -1,5 +1,4 @@
 #pragma once
-#include "../../include/Pokemon/Pokemons/Pidgey.hpp"
 #include "../../include/Pokemon/pokemon.hpp"
 
 namespace N_Pokemon {
@@ -9,8 +8,8 @@ namespace N_Pokemon {
 		public:
 			Pidgey();
 
-		private:
-			void wingAttack(Pokemon& target);
+		//private:
+			void wingAttack(Pokemon &target);
 		};
 	}
 }

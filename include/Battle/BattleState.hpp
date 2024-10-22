@@ -3,6 +3,8 @@
 
 namespace N_Battle {
 
+	using namespace N_Pokemon;
+
 	struct BattleState {
 		N_Pokemon::Pokemon playerPokemon;		// Pointer to the player's Pokémon
 		N_Pokemon::Pokemon wildPokemon;		// Pointer to the wild Pokémon

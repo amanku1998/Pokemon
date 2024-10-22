@@ -3,16 +3,21 @@
 #include "../../include/Pokemon/Pokemon.hpp"
 #include <cstdlib> // For rand()
 #include <ctime>   // For time()
-using namespace N_Pokemon;
+
 
 namespace N_Battle {
+
+	using namespace N_Pokemon;
 
 	WildEncounterManager::WildEncounterManager() {
 		srand(time(0)); // Seed the random number generator
 	}
 
-	N_Pokemon::Pokemon WildEncounterManager::getRandomPokemonFromGrass(const Grass& grass) {
+	Pokemon WildEncounterManager::getRandomPokemonFromGrass(const Grass& grass) {
 		int randomIndex = rand() % grass.wildPokemonList.size();
-		return grass.wildPokemonList[randomIndex];
+
+		Pokemon wildPokemon = grass.wildPokemonList[randomIndex];
+
+		return wildPokemon;
 	}
 }

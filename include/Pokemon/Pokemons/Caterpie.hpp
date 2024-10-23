@@ -11,6 +11,7 @@ namespace N_Pokemon {
         public:
             Caterpie();
 
+            void attack(Move selectedMove, Pokemon* target) override;
         //private:
             void bugBite(Pokemon* target);
         };

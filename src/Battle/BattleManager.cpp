@@ -27,10 +27,10 @@ namespace N_Battle {
 
     void BattleManager::battle() {
         while (battleState.battleOngoing) {
-            if (battleState.playerTurn) 
+            if (battleState.playerTurn && battleState.playerPokemon->canAttack())
                 // Player's turn to attack
                 battleState.playerPokemon->selectAndUseMove(battleState.wildPokemon);
-            else 
+            else if(battleState.wildPokemon->canAttack())
                 // Wild Pokémon's turn to attack
                 battleState.wildPokemon->selectAndUseMove(battleState.playerPokemon);
 

@@ -2,7 +2,10 @@
 #include <string>
 #include <vector>
 #include "Move.hpp"
+#include "../../include/StatusEffect/IStatusEffect.hpp"
+#include "../../include/StatusEffect/StatusEffectType.hpp"
 using namespace std;
+using namespace N_Pokemon::N_StatusEffects;
 
 namespace N_Pokemon {
 
@@ -18,6 +21,7 @@ namespace N_Pokemon {
         //int attackPower;        // New attribute for attack power
 
         vector<Move> moves; // Store the list of moves
+        ISatusEffect *appliedEffect;
 
         //Default constructor
         Pokemon();
@@ -33,6 +37,10 @@ namespace N_Pokemon {
 
         void selectAndUseMove(Pokemon* target);
         void reduceAttackPower(int reduced_damage);
+        bool canAttack();
+        bool canApplyEffect();
+        void applyEffect(StatusEffectType effectToApply);
+        void clearEffect();
 
     protected:
         // Base implementation for selecting and using a move

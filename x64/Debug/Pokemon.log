@@ -1,16 +1,52 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Pokemon.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Main.cpp
   BattleManager.cpp
-  Player.cpp
-  ProfessorOak.cpp
   Game.cpp
+D:\C++_project\Pokemon\Pokemon\src\Battle\BattleManager.cpp(28,44): error C2248: 'N_Pokemon::Pokemon::selectAndUseMove': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(35,14):
+      see declaration of 'N_Pokemon::Pokemon::selectAndUseMove'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(11,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+D:\C++_project\Pokemon\Pokemon\src\Battle\BattleManager.cpp(33,42): error C2248: 'N_Pokemon::Pokemon::selectAndUseMove': cannot access protected member declared in class 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(35,14):
+      see declaration of 'N_Pokemon::Pokemon::selectAndUseMove'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(11,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
+  Main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(2050,68): error C2036: 'N_Pokemon::Move *': unknown size
+  (compiling source file 'src/Main/Game.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(2050,68):
+      the template instantiation context (the oldest one first) is
+          D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(19,22):
+          see reference to class template instantiation 'std::vector<N_Pokemon::Move,std::allocator<N_Pokemon::Move>>' being compiled
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(2038,23):
+          while compiling class template member function 'void std::vector<N_Pokemon::Move,std::allocator<N_Pokemon::Move>>::_Tidy(void) noexcept'
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(761,14):
+              see the first reference to 'std::vector<N_Pokemon::Move,std::allocator<N_Pokemon::Move>>::_Tidy' in 'std::vector<N_Pokemon::Move,std::allocator<N_Pokemon::Move>>::~vector'
+              D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(42,5):
+              see the first reference to 'std::vector<N_Pokemon::Move,std::allocator<N_Pokemon::Move>>::~vector' in 'N_Pokemon::Pokemon::~Pokemon'
+  
+  Player.cpp
   Pokemon.cpp
+  ProfessorOak.cpp
   Balbasaur.cpp
   Caterpie.cpp
+D:\C++_project\Pokemon\Pokemon\src\Pokemon\Pokemons\Caterpie.cpp(27,25): error C2039: 'reduceAttackPower': is not a member of 'N_Pokemon::Pokemon'
+      D:\C++_project\Pokemon\Pokemon\include\Pokemon\pokemon.hpp(11,11):
+      see declaration of 'N_Pokemon::Pokemon'
+  
   Charmander.cpp
   Pidgey.cpp
+D:\C++_project\Pokemon\Pokemon\src\Pokemon\Pokemons\Pidgey.cpp(28,46): error C2039: 'stopBattle': is not a member of 'N_Battle::BattleManager'
+      D:\C++_project\Pokemon\Pokemon\include\Battle\BattleManager.hpp(12,8):
+      see declaration of 'N_Battle::BattleManager'
+  
+D:\C++_project\Pokemon\Pokemon\src\Pokemon\Pokemons\Pidgey.cpp(28,46): error C3861: 'stopBattle': identifier not found
   Pikachu.cpp
   Squirtle.cpp
   Zubat.cpp
+D:\C++_project\Pokemon\Pokemon\src\Pokemon\Pokemons\Zubat.cpp(26,52): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  WildEncounterManager.cpp
+D:\C++_project\Pokemon\Pokemon\src\Battle\WildEncounterManager.cpp(13,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating Code...
-  Pokemon.vcxproj -> D:\C++_project\Pokemon\x64\Debug\Pockemon.exe

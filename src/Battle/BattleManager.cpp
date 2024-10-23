@@ -24,11 +24,13 @@ namespace N_Battle {
         while (battleState.battleOngoing) {
             if (battleState.playerTurn) {
                 // Player's turn to attack
-                battleState.playerPokemon->attack(battleState.wildPokemon);
+               //battleState.playerPokemon->attack(battleState.wildPokemon);
+                battleState.playerPokemon->selectAndUseMove(battleState.wildPokemon);
             }
             else {
                 // Wild Pokémon's turn to attack
-                battleState.wildPokemon->attack(battleState.playerPokemon);
+                //battleState.wildPokemon->attack(battleState.playerPokemon);
+                battleState.wildPokemon->selectAndUseMove(battleState.playerPokemon);
             }
 
             // Update the battle state after the turn

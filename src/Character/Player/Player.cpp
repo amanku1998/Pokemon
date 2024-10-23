@@ -37,13 +37,13 @@ namespace N_Character
                 break;
             case PokemonChoice::BULBASAUR:     
                 //chosenPokemon = new Pokemon("Bulbasaur", PokemonType::GRASS, 100, 8);
-                chosenPokemon = new Balbasaur();;
+                chosenPokemon = new Balbasaur();
                 cout << "You chose Bulbasaur! A calm and wise choice." << endl;
                 cout << "Professor Oak: Bulbasaur will grow strong, just like your bond with it." << endl;
                 break;
             case PokemonChoice::SQUIRTLE:     
                 //chosenPokemon = new Pokemon("Squirtle", PokemonType::WATER, 100, 9);
-                chosenPokemon = new Squirtle();;
+                chosenPokemon = new Squirtle();
                 cout << "You chose Squirtle! A loyal and dependable friend" << endl;
                 cout << "Professor Oak: Squirtle's water will wash away any obstacles in your way!" << endl;
                 break;

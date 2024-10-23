@@ -1,6 +1,7 @@
 #pragma once
 #include "../../include/Pokemon/Pokemon.hpp"
 #include "../../include/Pokemon/PokemonType.hpp"
+#include "../../include/StatusEffect/ParalyzedEffect.hpp"
 #include "../../include/Utility/Utility.hpp"
 #include<iostream>
 #include <vector>
@@ -24,6 +25,7 @@ namespace N_Pokemon {
         maxHealth = p_health;
         health = p_health;
         moves = p_moves;
+        appliedEffect = nullptr;
     }
 
     // Copy constructor
@@ -61,6 +63,31 @@ namespace N_Pokemon {
                 moves[i].power = 0;
         }
     }
+
+    bool Pokemon::canAttack()
+    {
+        if (appliedEffect == nullptr)
+            return true;
+        else
+            return appliedEffect->turnEndEffect(this);
+    }
+
+    bool Pokemon::canApplyEffect() { return appliedEffect == nullptr; }
+
+    void Pokemon::applyEffect(StatusEffectType effectToApply)
+    {
+        switch (effectToApply)
+        {
+        case StatusEffectType::PARALYZED:
+            appliedEffect = new ParalyzedEffect();
+            appliedEffect->applyEffect(this);
+            break;
+        default:
+            appliedEffect = nullptr;
+        }
+    }
+
+    void Pokemon::clearEffect() { appliedEffect = nullptr; }
 
     void Pokemon::printAvailableMoves() {
         cout << name << "'s available moves:\n";
@@ -109,4 +136,12 @@ namespace N_Pokemon {
         // Restore health to full
         void Pokemon::heal() { health = maxHealth;
     }
+
+    void Pokemon::attack(Move selectedMove, Pokemon* target) { target->takeDamage(selectedMove.power); }
+
+    // Check if the Pokemon has fainted
+    bool Pokemon::isFainted() const { return health <= 0; }
+
+    // Restore health to full
+    void Pokemon::heal() { health = maxHealth; }
 }

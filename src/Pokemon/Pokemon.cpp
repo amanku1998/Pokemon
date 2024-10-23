@@ -1,6 +1,5 @@
 #pragma once
 #include "../../include/Pokemon/Pokemon.hpp"
-//#include "../../include/Pokemon/Move.hpp"
 #include "../../include/Pokemon/PokemonType.hpp"
 #include "../../include/Utility/Utility.hpp"
 #include<iostream>
@@ -43,14 +42,6 @@ namespace N_Pokemon {
             health = 0; // Ensure HP doesn't go below 0
         }
     }
-
-    //bool Pokemon::isFainted() const {
-    //    return health <= 0;     // Return true if HP is 0 or less
-    //}
-
-    //void Pokemon::heal() {
-    //    health = maxHealth;
-    //}
 
     void Pokemon::selectAndUseMove(Pokemon* target) {
         printAvailableMoves();

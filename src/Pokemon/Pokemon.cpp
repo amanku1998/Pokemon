@@ -1,15 +1,14 @@
 #pragma once
 #include "../../include/Pokemon/Pokemon.hpp"
-#include "../../include/Pokemon/Move.hpp"
+//#include "../../include/Pokemon/Move.hpp"
 #include "../../include/Pokemon/PokemonType.hpp"
 #include "../../include/Utility/Utility.hpp"
 #include<iostream>
 #include <vector>
+using namespace std;
+using namespace N_Utility;
 
 namespace N_Pokemon {
-
-    using namespace std;
-    using namespace N_Utility;
 
     // Default constructor
     Pokemon::Pokemon() {
@@ -17,29 +16,27 @@ namespace N_Pokemon {
         type = PokemonType::NORMAL;
         health = 50;
         maxHealth = 50;
-        attackPower = 10;
     }
 
     // Parameterized constructor
-    Pokemon::Pokemon(string p_name, PokemonType p_type, int p_health, int p_attackPower) {
+    Pokemon::Pokemon(string p_name, PokemonType p_type, int p_health, vector<Move> p_moves) {
         name = p_name;
         type = p_type;
         maxHealth = p_health;
         health = p_health;
-        attackPower = p_attackPower;
+        moves = p_moves;
     }
 
-
     // Copy constructor
-    Pokemon::Pokemon(const Pokemon* other) {
+    Pokemon::Pokemon(Pokemon* other) {
         name = other->name;
         type = other->type;
         health = other->health;
         maxHealth = other->maxHealth;
-        attackPower = other->attackPower;
+        moves = other->moves;
     }
 
-    void Pokemon::TakeDamage(int damage)
+    void Pokemon::takeDamage(int damage)
     {
         health -= damage;   // Reduce HP by the damage amount
         if (health < 0) {
@@ -47,22 +44,13 @@ namespace N_Pokemon {
         }
     }
 
-    bool Pokemon::isFainted() const {
-        return health <= 0;     // Return true if HP is 0 or less
-    }
-
-    void Pokemon::heal() {
-        health = maxHealth;
-    }
-
-    //void Pokemon::attack(Pokemon* target)
-    //{
-    //    cout << name << " attacks " << target->name << " for " << attackPower << " damage!\\n";
-    //    target->TakeDamage(attackPower);   // Apply damage to the target Pokémon
+    //bool Pokemon::isFainted() const {
+    //    return health <= 0;     // Return true if HP is 0 or less
     //}
 
-    //void Pokemon::attack(Move selectedMove, Pokemon* target) { target->takeDamage(selectedMove.power); }
-
+    //void Pokemon::heal() {
+    //    health = maxHealth;
+    //}
 
     void Pokemon::selectAndUseMove(Pokemon* target) {
         printAvailableMoves();
@@ -71,6 +59,16 @@ namespace N_Pokemon {
         Move selectedMove = moves[choice - 1];
 
         useMove(selectedMove, target);
+    }
+
+    void Pokemon::reduceAttackPower(int reduced_damage)
+    {
+        for (int i = 0; i < moves.size(); i++)
+        {
+            moves[i].power -= reduced_damage;
+            if (moves[i].power < 0)
+                moves[i].power = 0;
+        }
     }
 
     void Pokemon::printAvailableMoves() {
@@ -101,14 +99,23 @@ namespace N_Pokemon {
         cout << name << " used " << selectedMove.name << "!\n";
         attack(selectedMove, target);
 
-        Utility::waitForEnter();
+        N_Utility::Utility::waitForEnter();
 
         cout << "...\n";
-        Utility::waitForEnter();
+        N_Utility::Utility::waitForEnter();
 
         if (target->isFainted())
             cout << target->name << " fainted!\n";
         else
             cout << target->name << " has " << target->health << " HP left.\n";
+        }
+
+        void Pokemon::attack(Move selectedMove, Pokemon* target) { target->takeDamage(selectedMove.power); }
+
+        // Check if the Pokemon has fainted
+        bool Pokemon::isFainted() const { return health <= 0; }
+
+        // Restore health to full
+        void Pokemon::heal() { health = maxHealth;
     }
 }

@@ -10,11 +10,11 @@ namespace N_Pokemon {
         using namespace std;
         using namespace N_Utility;
 
-        Pidgey::Pidgey() : Pokemon("Pidgey", PokemonType::NORMAL, 100, 35) {}
-
-        //void Pidgey::attack(Pokemon* target) {
-        //    wingAttack(target);
-        //}
+        Pidgey::Pidgey()
+            : Pokemon("Pidgey", PokemonType::FLYING, 80, {
+                Move("GUST", 15),
+                Move("TACKLE", 10)
+                }) {}
 
         void Pidgey::attack(Move selectedMove, Pokemon* target) {
             Pokemon::attack(selectedMove, target);
@@ -29,22 +29,6 @@ namespace N_Pokemon {
                     N_Utility::Utility::waitForEnter();
                 }
             }
-        }
-
-        void Pidgey::wingAttack(Pokemon* target) {
-            cout << name << " used WING ATTACK!\n";
-            Utility::waitForEnter();
-
-            cout << "...\n";
-            Utility::waitForEnter();
-
-            target->TakeDamage(attackPower);
-
-            if (target->isFainted())
-                cout << target->name << " fainted!\n";
-            else
-                cout << target->name << " has " << target->health << " HP left.\n";
-            Utility::waitForEnter();
         }
     }
 }

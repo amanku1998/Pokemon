@@ -10,11 +10,11 @@ namespace N_Pokemon {
         using namespace std;
         using namespace N_Utility;
 
-        Zubat::Zubat() : Pokemon("Zubat", PokemonType::POISON, 100, 20) {}
-
-        //void Zubat::attack(Pokemon* target) {
-        //    supersonic(target);
-        //}
+        Zubat::Zubat()
+            : Pokemon("Zubat", PokemonType::POISON, 85, {
+                Move("BITE", 18),
+                Move("LEECH LIFE", 10)
+                }) {}
 
         void Zubat::attack(Move selectedMove, Pokemon* target) {
             // Call the base class method from child class.
@@ -31,22 +31,6 @@ namespace N_Pokemon {
 
                 std::cout << "... and regained health!\n";
             }
-        }
-
-        void Zubat::supersonic(Pokemon* target) {
-            cout << name << " used SUPERSONIC!\n";
-            Utility::waitForEnter();
-
-            cout << "...\n";
-            Utility::waitForEnter();
-
-            target->TakeDamage(attackPower);
-
-            if (target->isFainted())
-                cout << target->name << " fainted!\n";
-            else
-                cout << target->name << " has " << target->health << " HP left.\n";
-            Utility::waitForEnter();
         }
     }
 }

@@ -4,8 +4,8 @@
 #include "../../include/Main/Game.hpp"
 #include "../../include/Character/Player/Player.hpp"
 #include "../../include/Character/ProfessorOak.hpp"
-#include "../../include/Pokemon/PokemonChoice.hpp"
-#include "../../include/Pokemon/PokemonType.hpp"
+//#include "../../include/Pokemon/PokemonChoice.hpp"
+//#include "../../include/Pokemon/PokemonType.hpp"
 #include <iostream>
 #include <limits> // Include this header to use std::numeric_limits
 #include <string>

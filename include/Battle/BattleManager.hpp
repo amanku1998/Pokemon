@@ -5,16 +5,17 @@
 namespace N_Battle {
 
 	class Pokemon;
-
 	using namespace N_Character::N_Player;
 	using namespace N_Pokemon;
 
 	class BattleManager {
 	public:
 		void startBattle(Player* player, N_Pokemon::Pokemon* wildPokemon);
+		static void stopBattle();
+		static BattleState battleState;
 
 	private:
-		BattleState battleState;
+		
 		//void battle(Pokemon &playerPokemon, Pokemon &wildPokemon);
 		void battle();
 		void updateBattleState();

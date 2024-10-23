@@ -11,7 +11,7 @@ namespace N_Pokemon {
 
             void attack(Move selectedMove,Pokemon* target) override;
         //private:
-            void flameThrower(Pokemon* target);
+            //void flameThrower(Pokemon* target);
         };
 
     }

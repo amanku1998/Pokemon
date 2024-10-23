@@ -4,7 +4,6 @@
 #include <iostream>
 
 namespace N_Pokemon {
-
     namespace N_Pokemons {
 
         class Caterpie : public Pokemon {
@@ -13,7 +12,7 @@ namespace N_Pokemon {
 
             void attack(Move selectedMove, Pokemon* target) override;
         //private:
-            void bugBite(Pokemon* target);
+            //void bugBite(Pokemon* target);
         };
     }
 }

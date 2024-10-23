@@ -116,6 +116,9 @@
     <ClInclude Include="include\Pokemon\Move.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\Pokemon\MoveName.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="include\Pokemon\Pokemons\Charmander.hpp" />

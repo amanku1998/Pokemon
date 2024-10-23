@@ -1,7 +1,5 @@
 #include "../../include/Character/Player/Player.hpp" // Correct path to Player.hpp
-//using namespace N_Player;
 #include <iostream>
-//using namespace std;
 
 class Player;
 

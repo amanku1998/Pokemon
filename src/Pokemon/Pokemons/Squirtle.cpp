@@ -9,11 +9,12 @@ namespace N_Pokemon {
         using namespace std;
         using namespace N_Utility;
 
-        Squirtle::Squirtle() : Pokemon("Squirtle", PokemonType::FIRE, 100, 35) {}
-
-        //void Squirtle::attack(Pokemon* target) {
-        //    waterSplash(target);
-        //}
+        Squirtle::Squirtle()
+            : Pokemon("Squirtle", PokemonType::WATER, 105, {
+                Move("WATER GUN", 20),
+                Move("TACKLE", 10),
+                Move("RAPID SPIN", 5)
+                }) {}
 
         void Squirtle::attack(Move selectedMove, Pokemon* target) {
             Pokemon::attack(selectedMove, target);
@@ -30,23 +31,6 @@ namespace N_Pokemon {
 
                 std::cout << "... and hit " << hits << " times!\\n";
             }
-        }
-
-        void Squirtle::waterSplash(Pokemon* target) {
-
-            cout << name << " used WATER SPLASH!\n";
-            Utility::waitForEnter();
-
-            cout << "...\n";
-            Utility::waitForEnter();
-
-            target->TakeDamage(attackPower);
-
-            if (target->isFainted())
-                cout << target->name << " fainted!\n";
-            else
-                cout << target->name << " has " << target->health << " HP left.\n";
-            Utility::waitForEnter();
         }
     }
 }

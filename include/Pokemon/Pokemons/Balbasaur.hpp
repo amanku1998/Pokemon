@@ -13,7 +13,7 @@ namespace N_Pokemon {
 
             void attack(Move selectedMove, Pokemon* target) override;
         //private:
-            void vineWhip(Pokemon* target);
+            //void vineWhip(Pokemon* target);
 
         };
 

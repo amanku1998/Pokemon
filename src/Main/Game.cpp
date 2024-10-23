@@ -25,11 +25,11 @@ namespace N_Main {
     }
 
     void Game::gameLoop(Player* player) {
+
         int choice;
         bool keepPlaying = true;
         BattleManager* battleManager = new BattleManager();
         WildEncounterManager* encounterManager = new WildEncounterManager();
-       // N_Pokemon::Pokemon* wildPokemon = new N_Pokemon::Pokemon();
 
         while (keepPlaying) {
             // Clear console before showing options

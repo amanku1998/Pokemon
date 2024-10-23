@@ -11,11 +11,12 @@ namespace N_Pokemon {
         using namespace std;
         using namespace N_Utility;
 
-        Caterpie::Caterpie() : Pokemon("Caterpie", PokemonType::BUG, 100, 10) {}
-
-        //void Caterpie::attack(Pokemon* target) {
-        //    bugBite(target);
-        //}
+        Caterpie::Caterpie()
+            : Pokemon("Caterpie", PokemonType::BUG, 75, {
+                Move("TACKLE", 10),
+                Move("STRING SHOT", 5),
+                Move("STICKY WEB", 10)
+                }) {}
 
         void Caterpie::attack(Move selectedMove, Pokemon* target) {
             Pokemon::attack(selectedMove, target);
@@ -27,23 +28,6 @@ namespace N_Pokemon {
                 target->reduceAttackPower(reducedDamage);
                 std::cout << target->name << "'s next attack will be reduced by " << reducedDamage << " damage!\n";
             }
-        }
-
-
-        void Caterpie::bugBite(Pokemon* target) {
-            cout << name << " used BUG BITE!\n";
-            Utility::waitForEnter();
-
-            cout << "...\n";
-            Utility::waitForEnter();
-
-            target->TakeDamage(attackPower);
-
-            if (target->isFainted())
-                cout << target->name << " fainted!\n";
-            else
-                cout << target->name << " has " << target->health << " HP left.\n";
-            Utility::waitForEnter();
         }
     }
 }

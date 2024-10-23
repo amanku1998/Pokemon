@@ -1,13 +1,16 @@
 #pragma once
-#include "../../include/Character/Player/Player.hpp"
 #include "../../include/Battle/BattleManager.hpp"
+#include "../../include/Character/Player/Player.hpp"
 #include "../../include/Utility/Utility.hpp"
 #include <iostream>
 
 namespace N_Battle {
+
     using namespace std;
     using namespace N_Utility;
     using namespace N_Pokemon;
+
+    BattleState BattleManager::battleState;
 
     void BattleManager::startBattle(Player* player, N_Pokemon::Pokemon* wildPokemon) {
         battleState.playerPokemon = player->chosenPokemon;
@@ -20,18 +23,16 @@ namespace N_Battle {
         battle();
     }
 
+    void BattleManager::stopBattle() { battleState.battleOngoing = false; }
+
     void BattleManager::battle() {
         while (battleState.battleOngoing) {
-            if (battleState.playerTurn) {
+            if (battleState.playerTurn) 
                 // Player's turn to attack
-               //battleState.playerPokemon->attack(battleState.wildPokemon);
                 battleState.playerPokemon->selectAndUseMove(battleState.wildPokemon);
-            }
-            else {
+            else 
                 // Wild Pokémon's turn to attack
-                //battleState.wildPokemon->attack(battleState.playerPokemon);
                 battleState.wildPokemon->selectAndUseMove(battleState.playerPokemon);
-            }
 
             // Update the battle state after the turn
             updateBattleState();

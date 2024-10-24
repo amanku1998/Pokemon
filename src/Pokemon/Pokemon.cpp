@@ -126,15 +126,6 @@ namespace N_Pokemon {
             cout << target->name << " fainted!\n";
         else
             cout << target->name << " has " << target->health << " HP left.\n";
-        }
-
-        void Pokemon::attack(Move selectedMove, Pokemon* target) { target->takeDamage(selectedMove.power); }
-
-        // Check if the Pokemon has fainted
-        bool Pokemon::isFainted() const { return health <= 0; }
-
-        // Restore health to full
-        void Pokemon::heal() { health = maxHealth;
     }
 
     void Pokemon::attack(Move selectedMove, Pokemon* target) { target->takeDamage(selectedMove.power); }

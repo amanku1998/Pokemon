@@ -18,8 +18,6 @@ namespace N_Pokemon {
         PokemonType type;
         int health;         // Represents the current HP
         int maxHealth;      // Represents the maximum HP
-        //int attackPower;        // New attribute for attack power
-
         vector<Move> moves; // Store the list of moves
         ISatusEffect *appliedEffect;
 

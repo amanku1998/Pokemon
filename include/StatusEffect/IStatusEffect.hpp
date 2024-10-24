@@ -3,6 +3,8 @@
 
 namespace N_Pokemon
 {
+	class Pokemon;  // Forward declaration of the Pokemon class
+
 	namespace N_StatusEffects
 	{
 		class ISatusEffect {

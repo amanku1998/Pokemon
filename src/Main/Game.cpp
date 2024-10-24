@@ -1,9 +1,9 @@
 #pragma once
 
+#include "../../include/Main/Game.hpp"
 #include "../../include/Battle/BattleManager.hpp"
 #include "../../include/Character/Player/Player.hpp"
 #include "../../include/Pokemon/PokemonType.hpp"
-#include "../../include/Main/Game.hpp"
 #include "../../include/Battle/WildEncounterManager.hpp"
 #include "../../include/Utility/Utility.hpp"
 #include "../../include/Pokemon/Pokemons/Caterpie.hpp"

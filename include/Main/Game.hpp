@@ -1,14 +1,13 @@
 #pragma once
-
+#include "../../include/Pokemon/Pokemon.hpp" // Correct path to Player.hpp
 #include "../../include/Character/Player/Player.hpp" // Correct path to Player.hpp
-//#include "../../include/Pokemon/Pokemon.hpp" 
 #include "../../include/Pokemon/Grass.hpp"
 
 // class Player;
 namespace N_Main
 {
 	using namespace N_Pokemon;
-	//using namespace N_Character::N_Player;
+	using namespace N_Character::N_Player;
 
 	class Game {
 	private:
